@@ -6,9 +6,8 @@ def calculate_age():
         birth_date = input("Введите дату рождения (дд/мм/гггг): ")
         try:
             day, month, year = map(int, birth_date.split('/'))
-            # Проверка на корректность даты
             birth_date = datetime(year, month, day)
-            break  # Выход из цикла, если дата корректна
+            break 
         except ValueError:
             print("Некорректный ввод. Пожалуйста, введите дату в формате дд/мм/гггг.")
 
